@@ -2,7 +2,6 @@
 function findMatching(drivers, name) {
 
   return drivers.filter(d => {
-    console.log(d, name);
     let dName = d[0].toUpperCase() + d.slice(1);
     return dName === name
   })
